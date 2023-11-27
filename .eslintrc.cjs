@@ -11,7 +11,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:prettier/recommended',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'postcss.config.cjs'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: './tsconfig.json',
