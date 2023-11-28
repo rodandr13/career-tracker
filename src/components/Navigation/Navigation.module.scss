@@ -4,14 +4,18 @@
   background: $color-text-primary;
   height: 100%;
   position: fixed;
+  padding: 8px;
 }
 
 .menuList {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
   &__item {
-
+    padding: 6px 7px 6px 7px;
   }
   &__link {
     text-decoration: none;
