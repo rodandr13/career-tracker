@@ -13,5 +13,12 @@ export default defineConfig({
       ],
     }
   },
-  assetsInclude: ['**/*.css', '**/*.png', '**/*.jpg', '**/*.svg', '**/*.ico', '**/*.woff', '**/*.woff2'],
+  resolve: {
+    alias: {
+      components: '/src/components/',
+      hooks: '/src/assets/',
+      types: '/src/types/',
+      assets: '/src/assets/',
+    }
+  }
 })
