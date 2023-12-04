@@ -6,23 +6,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/system';
-import Button from '@mui/material/Button';
+import CustomButton from 'components/CustomButton';
 import styles from './BaseTable.module.scss';
-
-const StudyButton = styled(Button)({
-  textTransform: 'initial',
-  borderRadius: '6px',
-  fontFamily: 'YS Text , Arial, sans-serif',
-  color: styles.primaryFontColor,
-  backgroundColor: styles.tableLinkColor,
-  lineHeight: '20px',
-  padding: '3px 13px',
-  boxShadow: 'none',
-  '&:hover': {
-    backgroundColor: styles.blueMain,
-    color: '#ffffff',
-  },
-});
 
 const HeaderTableCell = styled(TableCell)({
   fontFamily: 'YS Text , Arial, sans-serif',
@@ -73,7 +58,9 @@ const rows = [
 
 function BaseTable() {
   return (
-    <div style={{ boxShadow: '0px 4px 6px 0px #B0BEC54D', borderRadius: '5px' }}>
+    <div
+      style={{ boxShadow: '0px 4px 6px 0px #B0BEC54D', borderRadius: '5px' }}
+    >
       <TableContainer
         component={Paper}
         sx={{
@@ -103,7 +90,7 @@ function BaseTable() {
                 <BodyTableCell>{row.duration}</BodyTableCell>
                 <BodyTableCell>{row.status}</BodyTableCell>
                 <BodyTableCell>
-                  <StudyButton variant="contained">{row.button}</StudyButton>
+                  <CustomButton variant="small">{row.button}</CustomButton>
                 </BodyTableCell>
               </TableRow>
             ))}
