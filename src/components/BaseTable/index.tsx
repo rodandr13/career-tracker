@@ -21,16 +21,16 @@ const HeaderTableCell = styled(TableCell)({
   '&:first-of-type': {
     width: '75px',
   },
-  '&:nth-child(2)': {
+  '&:nth-of-type(2)': {
     width: '230px',
   },
-  '&:nth-child(3)': {
+  '&:nth-of-type(3)': {
     width: '190px',
   },
-  '&:nth-child(4)': {
+  '&:nth-of-type(4)': {
     width: '130px',
   },
-  '&:nth-child(5)': {
+  '&:nth-of-type(5)': {
     width: '90px',
   },
   boxSizing: 'border-box',

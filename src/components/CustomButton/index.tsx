@@ -11,7 +11,7 @@ function CustomButton({ variant, children }: Props) {
     fontFamily: 'YS Text , Arial, sans-serif',
     color: styles.blueMain,
     textTransform: 'initial',
-    backgroundColor: 'transparent',
+    backgroundColor: '#ffffff',
     borderRadius: '6px',
     padding: '10px 20px 10px 20px',
     fontSize: '14px',
