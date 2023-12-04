@@ -70,7 +70,7 @@ function BaseTable() {
           borderRadius: '5px',
         }}
       >
-        <Table sx={{ color: 'blue', fontFamily: 'YS Text, sans-serif' }}>
+        <Table>
           <TableHead>
             <TableRow>
               <HeaderTableCell>#</HeaderTableCell>

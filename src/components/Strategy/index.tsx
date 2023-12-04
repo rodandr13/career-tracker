@@ -1,6 +1,7 @@
 import CustomH2 from 'components/CustomH2';
 import CustomButton from 'components/CustomButton';
 import BaseTable from 'components/BaseTable';
+import SkillsTable from 'components/SkillsTable';
 
 function Strategy() {
   return (
@@ -9,7 +10,7 @@ function Strategy() {
       <BaseTable />
       <CustomButton variant="outline">Изменить стратегию развития</CustomButton>
       <CustomH2>Мои навыки</CustomH2>
-      <BaseTable />
+      <SkillsTable />
       <CustomButton variant="outline">Скорректировать свои навыки</CustomButton>
     </>
   );
