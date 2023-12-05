@@ -6,7 +6,10 @@ import styles from './ProgressBar.module.scss';
 function ProgressBar() {
   const [selected, setSelected] = useState<number[]>([3, 6]);
 
-  const handleSelection = (event: React.SyntheticEvent<HTMLElement, Event>, newSelectedValues: number[]) => {
+  const handleSelection = (
+    event: React.SyntheticEvent<HTMLElement, Event>,
+    newSelectedValues: number[]
+  ) => {
     setSelected(newSelectedValues);
   };
 
