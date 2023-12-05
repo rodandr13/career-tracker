@@ -7,9 +7,11 @@ $color-background-selected: #F1F6FF;
 $color-error: #FF0200;
 $color-background-secondary: #F9FAFB;
 $color-background-primary: #FFFFFF;
+$color-fill-green: #87CC9E;
 
 :export {
   primaryFontColor: $color-text-primary;
   tableLinkColor: $color-background-selected;
   blueMain: $color-link-primary;
+  fillGreen: $color-fill-green;
 }

@@ -6,10 +6,11 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/system';
+import ProgressBar from 'components/ProgressBar';
 import styles from './SkillsTable.module.scss';
 
 const HeaderTableCell = styled(TableCell)({
-  fontFamily: 'YS Text , Arial, sans-serif',
+  fontFamily: 'YS Text, Arial, sans-serif',
   color: styles.primaryFontColor,
   fontWeight: 500,
   padding: '0 0 0 12px',
@@ -28,7 +29,8 @@ const HeaderTableCell = styled(TableCell)({
 });
 
 const BodyTableCell = styled(TableCell)({
-  padding: '10px 12px',
+  fontFamily: 'YS Text, Arial, sans-serif',
+  padding: '5px 12px',
   backgroundColor: '#F1F6FF',
   borderBottom: 0,
 });
@@ -67,7 +69,9 @@ function SkillsTable() {
             <TableRow key={row.chapter}>
               <BodyTableCell>{row.chapter}</BodyTableCell>
               <BodyTableCell>{row.skills}</BodyTableCell>
-              <BodyTableCell>{row.progress}</BodyTableCell>
+              <BodyTableCell>
+                <ProgressBar />
+              </BodyTableCell>
             </TableRow>
           ))}
         </TableBody>
