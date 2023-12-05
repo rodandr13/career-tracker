@@ -1,15 +1,13 @@
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import styles from './ProgressBar.module.scss';
 
 function ProgressBar() {
-  const [selected, setSelected] = useState([3, 6]);
+  const [selected, setSelected] = useState<number[]>([3, 6]);
 
-  const handleSelection = (newValue) => {
-    if (newValue !== null) {
-      setSelected(newValue);
-    }
+  const handleSelection = (event: React.SyntheticEvent<HTMLElement, Event>, newSelectedValues: number[]) => {
+    setSelected(newSelectedValues);
   };
 
   const toggleButtonGroup = {
@@ -23,6 +21,9 @@ function ProgressBar() {
         color: 'white',
         '&:hover': {
           backgroundColor: 'darkblue',
+        },
+        '& + .MuiToggleButtonGroup-grouped.Mui-selected': {
+          marginLeft: '3px',
         },
       },
       '&:not(:last-of-type)': {
