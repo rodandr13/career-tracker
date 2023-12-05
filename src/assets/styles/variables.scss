@@ -2,7 +2,8 @@ $color-text-primary: #1A1B22;
 $color-button-primary: #797981;
 $color-text-secondary: #B5B5B7;
 $color-input-disabled: #DDE0E4;
-$color-link-primary: #1D6BF3;
+$color-link-primary: #5A9BFF;
+$color-link-primary-active: #1D6BF3;
 $color-background-selected: #F1F6FF;
 $color-error: #FF0200;
 $color-background-secondary: #F9FAFB;
@@ -13,5 +14,6 @@ $color-fill-green: #87CC9E;
   primaryFontColor: $color-text-primary;
   tableLinkColor: $color-background-selected;
   blueMain: $color-link-primary;
+  blueMainActive: $color-link-primary-active;
   fillGreen: $color-fill-green;
 }

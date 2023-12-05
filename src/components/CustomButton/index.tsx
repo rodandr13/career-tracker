@@ -21,13 +21,20 @@ function CustomButton({ variant, children }: Props) {
     boxSizing: 'border-box',
     boxShadow: 'none',
     '&:hover': {
-      backgroundColor: styles.blueMain,
+      backgroundColor: styles.blueMainActive,
       color: '#ffffff',
     },
   };
   const outlineButton = {
     ...basicStyle,
-    border: `1px solid ${styles.blueMain}`,
+    color: styles.blueMainActive,
+    border: `1px solid ${styles.blueMainActive}`,
+  };
+
+  const primaryButton = {
+    ...basicStyle,
+    backgroundColor: styles.blueMain,
+    color: '#ffffff',
   };
 
   const smallButton = {
@@ -36,7 +43,7 @@ function CustomButton({ variant, children }: Props) {
     backgroundColor: styles.tableLinkColor,
     padding: '3px 13px',
     '&:hover': {
-      backgroundColor: styles.blueMain,
+      backgroundColor: styles.blueMainActive,
       color: '#ffffff',
     },
   };
@@ -46,6 +53,8 @@ function CustomButton({ variant, children }: Props) {
     selectedStyle = outlineButton;
   } else if (variant === 'small') {
     selectedStyle = smallButton;
+  } else if (variant === 'primary') {
+    selectedStyle = primaryButton;
   }
   return <Button sx={selectedStyle}>{children}</Button>;
 }

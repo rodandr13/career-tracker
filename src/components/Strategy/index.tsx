@@ -11,7 +11,7 @@ function Strategy() {
       <CustomButton variant="outline">Изменить стратегию развития</CustomButton>
       <CustomH2>Мои навыки</CustomH2>
       <SkillsTable />
-      <CustomButton variant="outline">Скорректировать свои навыки</CustomButton>
+      <CustomButton variant="primary">Скорректировать свои навыки</CustomButton>
     </>
   );
 }
