@@ -3,8 +3,13 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import React, { useState } from 'react';
 import styles from './ProgressBar.module.scss';
 
-function ProgressBar() {
-  const [selected, setSelected] = useState<number[]>([3, 6]);
+interface Props {
+  disabled?: boolean;
+  exclusive?: boolean;
+}
+
+function ProgressBar({ disabled, exclusive }: Props) {
+  const [selected, setSelected] = useState<number[] | number>([3, 6]);
 
   const handleSelection = (
     event: React.SyntheticEvent<HTMLElement, Event>,
@@ -56,7 +61,8 @@ function ProgressBar() {
       sx={toggleButtonGroup}
       value={selected}
       onChange={handleSelection}
-      disabled
+      disabled={disabled}
+      exclusive={exclusive}
     >
       {[...Array(11).keys()].map((number) => (
         <ToggleButton sx={toggleButton} key={number} value={number}>
@@ -66,5 +72,10 @@ function ProgressBar() {
     </ToggleButtonGroup>
   );
 }
+
+ProgressBar.defaultProps = {
+  disabled: false,
+  exclusive: true,
+};
 
 export default ProgressBar;

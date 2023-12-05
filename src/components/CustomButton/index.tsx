@@ -37,6 +37,16 @@ function CustomButton({ variant, children }: Props) {
     color: '#ffffff',
   };
 
+  const darkButton = {
+    ...basicStyle,
+    backgroundColor: styles.primaryFontColor,
+    color: '#ffffff',
+    '&:hover': {
+      backgroundColor: '#000000',
+      color: '#ffffff',
+    },
+  };
+
   const smallButton = {
     ...basicStyle,
     color: styles.primaryFontColor,
@@ -55,6 +65,8 @@ function CustomButton({ variant, children }: Props) {
     selectedStyle = smallButton;
   } else if (variant === 'primary') {
     selectedStyle = primaryButton;
+  } else if (variant === 'dark') {
+    selectedStyle = darkButton;
   }
   return <Button sx={selectedStyle}>{children}</Button>;
 }

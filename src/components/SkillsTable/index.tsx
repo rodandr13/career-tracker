@@ -12,7 +12,7 @@ import CustomButton from 'components/CustomButton';
 import styles from './SkillsTable.module.scss';
 
 interface Props {
-  parentClasses: string;
+  parentClasses?: string;
 }
 
 const HeaderTableCell = styled(TableCell)({
@@ -54,38 +54,44 @@ const rows = [
 function SkillsTable({ parentClasses }: Props) {
   return (
     <div className={parentClasses}>
-      <CustomH2 parentClasses={styles.skillsTable__subtitle}>Мои навыки</CustomH2>
-      <TableContainer
-        component={Paper}
-        sx={{
-          padding: '0 16px 0 16px',
-          boxShadow: '0px 8px 24px 0px #B0BEC54D',
-          boxSizing: 'border-box',
-          borderRadius: '5px',
-          margin: '0 0 20px 0',
-        }}
+      <CustomH2 parentClasses={styles.skillsTable__subtitle}>
+        Мои навыки
+      </CustomH2>
+      <div
+        style={{ boxShadow: '0px 4px 6px 0px #B0BEC54D', borderRadius: '5px' }}
       >
-        <Table sx={{ borderSpacing: '0 20px', borderCollapse: 'separate' }}>
-          <TableHead>
-            <TableRow>
-              <HeaderTableCell>Раздел</HeaderTableCell>
-              <HeaderTableCell>Навык</HeaderTableCell>
-              <HeaderTableCell>Мой прогресс</HeaderTableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows.map((row) => (
-              <TableRow key={row.chapter}>
-                <BodyTableCell>{row.chapter}</BodyTableCell>
-                <BodyTableCell>{row.skills}</BodyTableCell>
-                <BodyTableCell>
-                  <ProgressBar />
-                </BodyTableCell>
+        <TableContainer
+          component={Paper}
+          sx={{
+            padding: '0 16px 0 16px',
+            boxShadow: '0px 8px 24px 0px #B0BEC54D',
+            boxSizing: 'border-box',
+            borderRadius: '5px',
+            margin: '0 0 20px 0',
+          }}
+        >
+          <Table sx={{ borderSpacing: '0 20px', borderCollapse: 'separate' }}>
+            <TableHead>
+              <TableRow>
+                <HeaderTableCell>Раздел</HeaderTableCell>
+                <HeaderTableCell>Навык</HeaderTableCell>
+                <HeaderTableCell>Мой прогресс</HeaderTableCell>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+            </TableHead>
+            <TableBody>
+              {rows.map((row) => (
+                <TableRow key={row.chapter}>
+                  <BodyTableCell>{row.chapter}</BodyTableCell>
+                  <BodyTableCell>{row.skills}</BodyTableCell>
+                  <BodyTableCell>
+                    <ProgressBar />
+                  </BodyTableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </div>
       <CustomButton variant="primary">Скорректировать свои навыки</CustomButton>
     </div>
   );

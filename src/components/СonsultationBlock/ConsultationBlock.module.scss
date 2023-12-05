@@ -1,0 +1,36 @@
+@import "assets/styles/variables.scss";
+@import "assets/fonts/ys-fonts";
+
+.consultationBlock {
+  width: 698px;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 40px 0 0 0;
+  background: $color-background-selected url("assets/images/consultation.svg") no-repeat right 100px center;
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-family: "YS Display" , Arial, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    max-width: 240px;
+  }
+  &__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: 0.5;
+    max-width: 300px;
+    margin: 3px 0 44px 0;
+    padding: 0;
+  }
+  &__price {
+    font-family: "YS Display" , Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    opacity: 0.85;
+    margin: 0 0 12px 0;
+  }
+}
