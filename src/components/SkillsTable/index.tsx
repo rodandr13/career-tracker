@@ -7,8 +7,6 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/system';
 import ProgressBar from 'components/ProgressBar';
-import CustomH2 from 'components/CustomH2';
-import CustomButton from 'components/CustomButton';
 import styles from './SkillsTable.module.scss';
 
 interface Props {
@@ -54,9 +52,6 @@ const rows = [
 function SkillsTable({ parentClasses }: Props) {
   return (
     <div className={parentClasses}>
-      <CustomH2 parentClasses={styles.skillsTable__subtitle}>
-        Мои навыки
-      </CustomH2>
       <div
         style={{ boxShadow: '0px 4px 6px 0px #B0BEC54D', borderRadius: '5px' }}
       >
@@ -92,7 +87,6 @@ function SkillsTable({ parentClasses }: Props) {
           </Table>
         </TableContainer>
       </div>
-      <CustomButton variant="primary">Скорректировать свои навыки</CustomButton>
     </div>
   );
 }

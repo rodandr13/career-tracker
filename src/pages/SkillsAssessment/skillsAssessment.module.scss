@@ -3,7 +3,7 @@
 
 .skillsAssessment {
   &__subtitle {
-    margin: 0 0 20px 0;
+    margin: 20px 0 20px 0;
   }
   &__list {
     list-style-type: none;
@@ -16,5 +16,7 @@
   }
   &__description {
     color: $color-button-primary;
+    margin: 0;
+    padding: 20px 0 40px 0;
   }
 }

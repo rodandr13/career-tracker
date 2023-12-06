@@ -1,11 +1,14 @@
 import SkillsTable from 'components/SkillsTable';
 import CustomH2 from 'components/CustomH2';
 import ConsultationBlock from 'components/СonsultationBlock';
+import CustomButton from 'components/CustomButton';
+import LinkBack from 'components/LinkBack';
 import styles from './skillsAssessment.module.scss';
 
 function SkillsAssessment() {
   return (
     <section className={styles.skillsAssessment}>
+      <LinkBack />
       <CustomH2 parentClasses={styles.skillsAssessment__subtitle}>
         Шаг 2 – Оцени свои навыки
       </CustomH2>
@@ -27,6 +30,9 @@ function SkillsAssessment() {
         Позже, ты сможешь скорректировать оценки.
       </p>
       <SkillsTable />
+      <CustomButton variant="primary">
+        Сформировать стратегию развития
+      </CustomButton>
       <ConsultationBlock />
     </section>
   );
