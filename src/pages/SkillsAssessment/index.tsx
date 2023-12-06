@@ -1,6 +1,7 @@
 import SkillsTable from 'components/SkillsTable';
 import CustomH2 from 'components/CustomH2';
 import ConsultationBlock from 'components/СonsultationBlock';
+import CustomButton from 'components/CustomButton';
 import styles from './skillsAssessment.module.scss';
 
 function SkillsAssessment() {
@@ -27,6 +28,9 @@ function SkillsAssessment() {
         Позже, ты сможешь скорректировать оценки.
       </p>
       <SkillsTable />
+      <CustomButton variant="primary">
+        Сформировать стратегию развития
+      </CustomButton>
       <ConsultationBlock />
     </section>
   );

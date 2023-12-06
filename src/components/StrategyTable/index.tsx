@@ -64,9 +64,6 @@ const rows = [
 function StrategyTable({ parentClasses }: Props) {
   return (
     <div className={parentClasses}>
-      <CustomH2 parentClasses={styles.strategyTable__subtitle}>
-        Моя стратегия
-      </CustomH2>
       <div
         style={{ boxShadow: '0px 4px 6px 0px #B0BEC54D', borderRadius: '5px' }}
       >
@@ -108,7 +105,6 @@ function StrategyTable({ parentClasses }: Props) {
           </Table>
         </TableContainer>
       </div>
-      <CustomButton variant="outline">Изменить стратегию развития</CustomButton>
     </div>
   );
 }

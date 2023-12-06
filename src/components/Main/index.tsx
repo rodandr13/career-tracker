@@ -1,4 +1,4 @@
-import SkillsAssessment from 'components/SkillsAssessment';
+import SkillsAssessment from '../../pages/SkillsAssessment';
 import styles from './Main.module.scss';
 
 function Main() {
