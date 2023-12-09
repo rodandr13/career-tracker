@@ -1,6 +1,7 @@
 import LinkBack from 'components/LinkBack';
 import CustomH2 from 'components/CustomH2';
-import CourseBlock from 'components/CourseBlock';
+import CourseBlocksContainer from 'components/CourseBlocksContainer';
+import ConsultationBlock from 'components/СonsultationBlock';
 import styles from './HelpDecide.module.scss';
 
 function HelpDecide() {
@@ -12,7 +13,8 @@ function HelpDecide() {
         Для начала рекомендуем пройти тест профориентации, если совсем не
         знаешь, где хочешь развиваться.
       </p>
-      <CourseBlock />
+      <CourseBlocksContainer />
+      <ConsultationBlock />
     </section>
   );
 }
