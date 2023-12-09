@@ -1,0 +1,14 @@
+@import "assets/styles/variables.scss";
+@import "assets/fonts/ys-fonts";
+
+.helpDecide {
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0;
+    margin: 8px 0 0 0;
+    color: $color-button-primary;
+    max-width: 480px;
+  }
+}
