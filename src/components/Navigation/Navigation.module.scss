@@ -12,12 +12,83 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 20px;
   &__item {
     padding: 6px 7px 6px 7px;
   }
   &__link {
+    position: relative;
     text-decoration: none;
     color: $color-text-secondary;
+    padding: 0 0 0 30px;
+    &_active {
+      color: #FFFFFF;
+    }
+    &_type_vacancies {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 17px;
+        height: 15px;
+        background: url("assets/images/vacancies_icon.svg");
+        left: 0;
+        top: 0;
+      }
+    }
+    &_type_workshop {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 15px;
+        background: url("assets/images/workshop_icon.svg");
+        left: 0;
+        top: 0;
+      }
+    }
+    &_type_diary {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 15px;
+        background: url("assets/images/diary_icon.svg");
+        left: 0;
+        top: 1px;
+      }
+    }
+    &_type_progressTracker {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 18px;
+        background: url("assets/images/progress_tracker.svg");
+        left: 0;
+        top: -1px;
+      }
+    }
+    &_type_contacts {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 18px;
+        background: url("assets/images/contacts_icon.svg");
+        left: 0;
+        top: -1px;
+      }
+    }
+    &_type_feed {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        background: url("assets/images/feed_icon.svg");
+        left: 0;
+        top: -2px;
+      }
+    }
   }
 }
