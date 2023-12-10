@@ -3,13 +3,12 @@ import SkillsTable from 'components/SkillsTable';
 import StrategyHeader from 'components/StrategyHeader';
 import CustomH2 from 'components/CustomH2';
 import CustomButton from 'components/CustomButton';
-import LinkBack from 'components/LinkBack';
 import styles from './Strategy.module.scss';
 
 function Strategy() {
+  console.log('test');
   return (
     <section className={styles.strategy}>
-      <LinkBack />
       <div>
         <StrategyHeader />
         <CustomH2 parentClasses={styles.strategy__subtitle}>

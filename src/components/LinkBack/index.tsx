@@ -6,7 +6,7 @@ function LinkBack() {
       <a className={styles.linkBack__link} href="/">
         <img
           className={styles.linkBack__image}
-          src="src/assets/images/back_icon.svg"
+          src="/src/assets/images/back_icon.svg"
           alt=""
         />
       </a>

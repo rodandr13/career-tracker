@@ -12,7 +12,7 @@ function CourseBlock() {
           Получите подробные результаты и разберетесь, что вам подходит
         </p>
         <div className={styles.courseBlock__imageContainer}>
-          <img src="src/assets/images/proforientation.svg" alt="" />
+          <img src="/src/assets/images/proforientation.svg" alt="" />
         </div>
         <span className={styles.courseBlock__labelFree}>Бесплатно</span>
       </div>

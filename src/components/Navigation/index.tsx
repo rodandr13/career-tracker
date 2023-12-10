@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styles from './Navigation.module.scss';
 
 function Navigation() {
@@ -5,34 +6,34 @@ function Navigation() {
     <nav className={styles.navigation}>
       <ul className={styles.menuList}>
         <li className={styles.menuList__item}>
-          <a className={styles.menuList__link} href="/">
+          <NavLink className={styles.menuList__link} to="/">
             Вакансии
-          </a>
+          </NavLink>
         </li>
         <li className={styles.menuList__item}>
-          <a className={styles.menuList__link} href="/">
+          <NavLink className={styles.menuList__link} to="/">
             Мастерская
-          </a>
+          </NavLink>
         </li>
         <li className={styles.menuList__item}>
-          <a className={styles.menuList__link} href="/">
+          <NavLink className={styles.menuList__link} to="/">
             Дневник
-          </a>
+          </NavLink>
         </li>
         <li className={styles.menuList__item}>
-          <a className={styles.menuList__link} href="/">
+          <NavLink className={styles.menuList__link} to="/">
             Трекер развития
-          </a>
+          </NavLink>
         </li>
         <li className={styles.menuList__item}>
-          <a className={styles.menuList__link} href="/">
+          <NavLink className={styles.menuList__link} to="/">
             Контакты
-          </a>
+          </NavLink>
         </li>
         <li className={styles.menuList__item}>
-          <a className={styles.menuList__link} href="/">
+          <NavLink className={styles.menuList__link} to="/">
             Лента
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>
