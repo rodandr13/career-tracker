@@ -1,9 +1,12 @@
 import { NavLink } from 'react-router-dom';
+import ProfileInfo from 'components/ProfileInfo';
+import OfferBlock from 'components/OfferBlock';
 import styles from './Navigation.module.scss';
 
 function Navigation() {
   return (
     <nav className={styles.navigation}>
+      <ProfileInfo />
       <ul className={styles.menuList}>
         <li className={styles.menuList__item}>
           <NavLink
@@ -59,6 +62,7 @@ function Navigation() {
           </NavLink>
         </li>
       </ul>
+      <OfferBlock />
     </nav>
   );
 }

@@ -1,0 +1,47 @@
+.profileInfo {
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin: 0 0 30px 0;
+  &__header {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin: 0 0 11px 0;
+  }
+  &__avatar {
+    display: block;
+    border-radius: 50%;
+  }
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+  &__stageTitle {
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+  &__stageLink {
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 12px;
+    text-decoration: none;
+    color: #1D6BF3;
+  }
+  &__flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__profileLink {
+    margin: -5px 0 0 0;
+  }
+}
