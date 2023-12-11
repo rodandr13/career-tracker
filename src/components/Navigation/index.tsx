@@ -63,6 +63,32 @@ function Navigation() {
         </li>
       </ul>
       <OfferBlock />
+      <ul className={styles.menuList}>
+        <li className={styles.menuList__item}>
+          <NavLink
+            className={`${styles.menuList__link} ${styles.menuList__link_type_vacation}`}
+            to="/"
+          >
+            Уйти в отпуск
+          </NavLink>
+        </li>
+        <li className={styles.menuList__item}>
+          <NavLink
+            className={`${styles.menuList__link} ${styles.menuList__link_type_profile}`}
+            to="/"
+          >
+            Инфо профиля
+          </NavLink>
+        </li>
+        <li className={styles.menuList__item}>
+          <NavLink
+            className={`${styles.menuList__link} ${styles.menuList__link_type_exit}`}
+            to="/"
+          >
+            Выход
+          </NavLink>
+        </li>
+      </ul>
     </nav>
   );
 }

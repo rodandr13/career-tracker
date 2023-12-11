@@ -89,5 +89,38 @@
         top: -2px;
       }
     }
+    &_type_vacation {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 17px;
+        background: url("assets/images/vacation_icon.svg");
+        left: 0;
+        top: 0;
+      }
+    }
+    &_type_profile {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        background: url("assets/images/profile_icon.svg");
+        left: 0;
+        top: -2px;
+      }
+    }
+    &_type_exit {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        background: url("assets/images/exit_icon.svg");
+        left: 0;
+        top: -1px;
+      }
+    }
   }
 }
