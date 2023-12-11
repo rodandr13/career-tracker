@@ -16,6 +16,7 @@ function ProgressBar({ disabled, exclusive }: Props) {
     newSelectedValues: number[]
   ) => {
     setSelected(newSelectedValues);
+    console.log(event);
   };
 
   const toggleButtonGroup = {

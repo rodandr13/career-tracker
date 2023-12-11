@@ -7,7 +7,6 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/system';
 import CustomButton from 'components/CustomButton';
-import CustomH2 from 'components/CustomH2';
 import styles from './StrategyTable.module.scss';
 
 interface Props {
